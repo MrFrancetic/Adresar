@@ -1,0 +1,45 @@
+﻿@model List<WebApplication1.Models.Domain.Osoba>
+
+@{
+}
+
+<h1>Osobe</h1>
+<!--Prikaz tablice koja će se pokazati kada se klikne na gumbu Osobe koji se nalazi na navigacijskoj traci,
+	tablica isto tako će se svaki put ažurirati kada se unese novi korisnik
+-->
+<table class="table">
+	<thead>
+		<tr>
+			<th>Ime</th>
+			<th>Prezime</th>
+			<th>Glavni broj</th>
+			<th>Broj mobitela</th>
+			<th>Fax</th>
+			<th>E-mail</th>
+			<th>Ulica</th>
+			<th>Kućni broj</th>
+			<th>Grad</th>
+			<th>Poštanski broj</th>
+		</tr>
+
+	</thead>
+	<tbody>
+		@foreach(var osoba in Model)
+		{
+			<tr>
+				<td>@osoba.Ime</td>
+				<td>@osoba.Prezime</td>
+				<td>@osoba.GlavniBr</td>
+				<td>@osoba.BrojMob</td>
+				<td>@osoba.Fax</td>
+				<td>@osoba.Email</td>
+				<td>@osoba.Ulica</td>
+				<td>@osoba.KucniBr</td>
+				<td>@osoba.Grad</td>
+				<td>@osoba.PostanskiBr</td>
+
+				<td><a href="Osobe/View/@osoba.Id">Uredi</a></td>
+			</tr>
+		}
+	</tbody>
+</table>

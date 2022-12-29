@@ -1,0 +1,82 @@
+﻿@model WebApplication1.Models.UpdateOsobaViewModel
+@{
+}
+
+<form method="post" action="View" class="mt-5">
+
+  <h1>Uredi podatke o osobi</h1>
+
+    <div class="mb-3">
+        <label for="" class="form-label">Id</label>
+        <input type="text" class="form-control" asp-for="Id" readonly>
+    </div>
+
+  <h5><b>Osnovni podaci</b></h5>
+    <!--Uredi Ime-->
+    <div class="mb-3">
+        <label for="" class="form-label">Ime</label>
+        <input type="text" class="form-control" asp-for="Ime">
+    </div>
+
+    <!--Uredi Prezime-->
+    <div class="mb-3">
+        <label for="" class="form-label">Prezime</label>
+        <input type="text" class="form-control" asp-for="Prezime">
+    </div>
+
+
+  <h5><b>Kontakt</b></h5>
+    <!--Uredi Glavni broj-->
+    <div class="mb-3">
+        <label for="" class="form-label">Glavni broj</label>
+        <input type="text" class="form-control" asp-for="GlavniBr">
+    </div>
+
+    <!--Uredi Broj mobitela-->
+    <div class="mb-3">
+        <label for="" class="form-label">Broj mobitela</label>
+        <input type="text" class="form-control" asp-for="BrojMob">
+    </div>
+
+    <!--Uredi Fax-->
+    <div class="mb-3">
+        <label for="" class="form-label">Fax</label>
+        <input type="text" class="form-control" asp-for="Fax">
+    </div>
+
+    <!--Uredi Email-->
+    <div class="mb-3">
+        <label for="" class="form-label">E-mail</label>
+        <input type="text" class="form-control" asp-for="Email">
+    </div>
+
+  <h5><b>Mjesto prebivališta</b></h5>
+
+    <!--Poštanski broj-->
+    <div class="mb-3">
+        <label for="" class="form-label">Poštanski broj</label>
+        <input type="text" class="form-control" asp-for="PostanskiBr">
+    </div>
+
+    <!--Grad-->
+    <div class="mb-3">
+        <label for="" class="form-label">Grad</label>
+        <input type="text" class="form-control" asp-for="Grad">
+    </div>
+
+    <!--Ulica-->
+    <div class="mb-3">
+        <label for="" class="form-label">Ulica</label>
+        <input type="text" class="form-control" asp-for="Ulica">
+    </div>
+
+    <!--Kućni broj-->
+    <div class="mb-3">
+        <label for="" class="form-label">Kućni broj</label>
+        <input type="number" class="form-control" asp-for="KucniBr">
+    </div>
+
+
+    <button type="submit" class="btn btn-primary">Spremi</button>
+    <button type="submit" class="btn btn-danger" asp-action="Delete">Izbriši osobu</button>
+</form>

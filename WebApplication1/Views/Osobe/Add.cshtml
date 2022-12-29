@@ -1,0 +1,79 @@
+﻿@model  WebApplication1.Models.AddOsobaViewModel
+@{
+}
+
+<form method="post" action="Add" class="mt-5">
+
+  <h1>Nova osoba</h1>
+
+       
+  <h5><b>Osnovni podaci</b></h5>
+
+        <!--Ime-->
+    <div class="mb-3">
+    <label for="" class="form-label">Ime</label>
+    <input type="text" class="form-control" asp-for="Ime"> 
+    </div>
+    
+        <!--Prezime-->
+    <div class="mb-3">
+        <label for="" class="form-label">Prezime</label>
+        <input type="text" class="form-control" asp-for="Prezime">
+    </div>
+
+  <h5><b>Kontakti</b></h5>
+
+        <!--Glavni broj-->
+    <div class="mb-3">
+      <label for="" class="form-label">Glavni broj</label>
+    <input type="text" class="form-control" asp-for="GlavniBr"> 
+     </div>
+
+        <!--Broj mobitela-->  
+    <div class="mb-3">
+      <label for="" class="form-label">Broj mobitela</label>
+    <input type="text" class="form-control" asp-for="BrojMob"> 
+    </div>
+  
+        <!--Fax-->  
+    <div class="mb-3">
+      <label for="" class="form-label">Fax</label>
+    <input type="text" class="form-control" asp-for="Fax"> 
+    </div>
+
+        <!--Email-->  
+    <div class="mb-3">
+        <label for="" class="form-label">E-mail</label>
+        <input type="text" class="form-control" asp-for="Email">
+    </div>
+
+
+  <h5><b>Mjesto prebivališta</b></h5>
+
+    <!--Poštanski broj-->
+    <div class="mb-3">
+        <label for="" class="form-label">Poštanski broj</label>
+        <input type="text" class="form-control" asp-for="PostanskiBr">
+    </div>
+
+    <!--Grad-->
+    <div class="mb-3">
+        <label for="" class="form-label">Grad</label>
+        <input type="text" class="form-control" asp-for="Grad">
+    </div>
+
+    <!--Ulica-->
+    <div class="mb-3">
+        <label for="" class="form-label">Ulica</label>
+        <input type="text" class="form-control" asp-for="Ulica">
+    </div>
+
+     <!--Kućni broj-->  
+    <div class="mb-3">
+        <label for="" class="form-label">Kućni broj</label>
+        <input type="number" class="form-control" asp-for="KucniBr">
+    </div>
+
+  <button type="submit" class="btn btn-primary">Spremi</button>
+
+</form>
